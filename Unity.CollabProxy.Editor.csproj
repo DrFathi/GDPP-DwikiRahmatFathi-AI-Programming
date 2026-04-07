@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0117FD3F-4E6F-15FF-E15D-2B5BE8F093C7}</ProjectGuid>
+    <ProjectGuid>{4E1D417C-7C8A-BFBD-B2D5-FA9AE12F3C4F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.CollabProxy.Editor</AssemblyName>
@@ -1201,7 +1201,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{0011C7CE-6196-36FD-8BF5-E5E9D58B6A6F}</Project>
+      <Project>{319B4757-13E1-A4A1-A253-E591A77BC26D}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
   </ItemGroup>

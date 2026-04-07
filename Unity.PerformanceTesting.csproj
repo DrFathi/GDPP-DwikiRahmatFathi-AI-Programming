@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{467CDCC0-0409-FE36-B7C9-9CA7A36801D6}</ProjectGuid>
+    <ProjectGuid>{07B3F7C9-B1D7-6754-41F2-873DDC95DDEC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.PerformanceTesting</AssemblyName>

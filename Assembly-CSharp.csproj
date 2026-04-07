@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{513A461F-AAC8-2343-6B6C-57AB7CFDC534}</ProjectGuid>
+    <ProjectGuid>{9C34B718-EFE4-1228-EAD7-3B284FBBE132}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -1116,6 +1116,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEditor.UI.Analytics">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.Analytics.dll</HintPath>
       <Private>False</Private>
@@ -1212,6 +1216,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.AIIntegration.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.AIIntegration.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
       <Private>False</Private>
@@ -1219,108 +1227,128 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.AI.Navigation.csproj">
-      <Project>{981630F9-CB21-BCFD-BED9-B6DFE8B9E93B}</Project>
+      <Project>{E4870B66-40A6-592B-DC45-1E9CC4AD2E38}</Project>
       <Name>Unity.AI.Navigation</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj">
-      <Project>{7938148B-88DC-35AE-1A4F-F2BC730A8970}</Project>
+      <Project>{05C79100-91EA-9D71-9DB8-3EC259515ECA}</Project>
       <Name>Unity.VisualScripting.SettingsProvider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.AI.Navigation.Updater.csproj">
-      <Project>{79AB278B-C5B4-2CFF-DF24-195F99E5AC0B}</Project>
+      <Project>{3F7C7B83-D348-6A18-F2B6-F268AF2BE222}</Project>
       <Name>Unity.AI.Navigation.Updater</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{BE2B04B7-7C15-246D-C3A1-3B9DA2EA4285}</Project>
+      <Project>{C1F032BA-FF43-33EB-2D56-7CBE67E75352}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.AI.Navigation.Editor.csproj">
-      <Project>{B418EF16-54DF-E800-E564-0E45DE1D6B78}</Project>
+      <Project>{455423ED-A39F-D799-6449-F73DF9D678EE}</Project>
       <Name>Unity.AI.Navigation.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
-      <Project>{620B604A-4975-11A3-59ED-0085CC3F785B}</Project>
+      <Project>{C0514063-EE20-4592-767E-9426BD0C5877}</Project>
       <Name>Unity.VisualScripting.Shared.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Searcher.Editor.csproj">
-      <Project>{685BB22A-62C2-BE9B-6A5B-3EA8B1054B4B}</Project>
+      <Project>{B15F527F-C3D0-28CF-460B-D487A02779BB}</Project>
       <Name>Unity.Searcher.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{0011C7CE-6196-36FD-8BF5-E5E9D58B6A6F}</Project>
+      <Project>{319B4757-13E1-A4A1-A253-E591A77BC26D}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Burst.Editor.csproj">
-      <Project>{2DE7EC86-8026-D940-1E70-8980789EB565}</Project>
+      <Project>{B1857FD8-0E7B-9FAA-A00F-25B874B0D708}</Project>
       <Name>Unity.Burst.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.csproj">
-      <Project>{BD88D8A6-EA39-52EE-137C-8FC781DC7CD8}</Project>
+      <Project>{BC320124-8ABA-9337-A2D3-4F88346666BF}</Project>
       <Name>Unity.VisualScripting.Core</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.Editor.csproj">
-      <Project>{1ECBC63C-E1D4-DB47-EE35-CC88C351BAA0}</Project>
+      <Project>{7B4AF154-4C38-D4D5-6E16-258656C74D61}</Project>
       <Name>Unity.Mathematics.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{3F5EA053-4387-4AC9-9B7F-4EED91EE5F15}</Project>
+      <Project>{1FC38540-D86A-C4ED-3270-35D7E5A83959}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.AI.Navigation.Editor.ConversionSystem.csproj">
-      <Project>{15CEA83F-C20F-C6C6-7311-642A213D8C02}</Project>
+      <Project>{B7F5E7B8-A311-24D4-F755-330ED2976DAF}</Project>
       <Name>Unity.AI.Navigation.Editor.ConversionSystem</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
-      <Project>{9B64A7C4-F625-28DA-7EF5-9D9BF6F8CE9C}</Project>
+      <Project>{407CC253-333E-C2A4-DB49-96E27E56811D}</Project>
       <Name>Unity.VisualScripting.Flow</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.Editor.csproj">
+      <Project>{4AE23378-CF3B-450D-0CFD-3D9B88F9D225}</Project>
+      <Name>Unity.ProBuilder.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
-      <Project>{5B0F2B63-AF5D-59B6-52E3-7FEE6BBDA53F}</Project>
+      <Project>{8FB239BB-8644-A1FC-D6A1-C80990A167C7}</Project>
       <Name>Unity.VisualScripting.Flow.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{511F6DA3-F54F-6626-75C1-E1E3B225FD49}</Project>
+      <Project>{07BB0450-273B-C852-BBC3-3FEC1E130E8C}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Collections.csproj">
-      <Project>{19159968-39D7-F450-3B6B-D2A744A7A22B}</Project>
+      <Project>{269C5DA1-D935-E060-643F-3050D74320C6}</Project>
       <Name>Unity.Collections</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InputSystem.ForUI.csproj">
-      <Project>{60B4B245-A289-62D3-FDDB-332A609F0B4C}</Project>
+      <Project>{73BB13F9-0544-A9E4-13A9-787C8FAAA534}</Project>
       <Name>Unity.InputSystem.ForUI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{64809649-146C-45E3-F0AD-86784DE0F7A7}</Project>
+      <Project>{AA32CE80-61D6-DD8E-8AC5-3E72C37CA9EA}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
-      <Project>{704A05B1-FAA3-012E-D594-820A10DCB5B1}</Project>
+      <Project>{3668D5D8-C938-9B62-73E9-BEC0F96CD6DE}</Project>
       <Name>Unity.VisualScripting.State.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.AddOns.Editor.csproj">
+      <Project>{ABC6E95E-F172-CCD7-D971-E1BB8BD6B1AF}</Project>
+      <Name>Unity.ProBuilder.AddOns.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Mathematics.csproj">
-      <Project>{5FA80B43-2547-425A-AE3C-69219699BFA4}</Project>
+      <Project>{AA62EAF5-0BEF-8662-8839-870FF044D77B}</Project>
       <Name>Unity.Mathematics</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Burst.csproj">
-      <Project>{EF5C1EFE-D4C2-7E95-4F0F-EE04DC84E60C}</Project>
+      <Project>{D740895E-3C76-335E-C4B2-60CF02793200}</Project>
       <Name>Unity.Burst</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
-      <Project>{24D70F91-B4E6-B350-A8A7-309FFAC05519}</Project>
+      <Project>{99FBC699-F016-E64E-5E7F-10306BFDF86C}</Project>
       <Name>Unity.VisualScripting.Core.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.AssetIdRemapUtility.csproj">
+      <Project>{9601FA2F-BD14-D33E-FE15-B144B293E5B1}</Project>
+      <Name>Unity.ProBuilder.AssetIdRemapUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ProBuilder.csproj">
+      <Project>{C88EB10C-BDEA-77F0-76BA-C223C2C8606B}</Project>
+      <Name>Unity.ProBuilder</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
-      <Project>{7069E01E-4856-8B8E-0103-4E72D0B36EE4}</Project>
+      <Project>{2EE27677-D479-633F-DACA-2255D5B1E227}</Project>
       <Name>Unity.VisualScripting.State</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Collections.Editor.csproj">
-      <Project>{960293E6-598C-F11A-9024-D9FF13FD506B}</Project>
+      <Project>{B0899575-2BC7-1737-E0EF-B4DC16152A66}</Project>
       <Name>Unity.Collections.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.InputSystem.csproj">
-      <Project>{E9279ECD-37F2-F04D-C3A7-35212253C0D8}</Project>
+      <Project>{17398DFC-8927-94F1-D4E0-753C2838F9F4}</Project>
       <Name>Unity.InputSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Settings.Editor.csproj">
+      <Project>{3D296524-1F6A-EB12-226A-A96B91339AAD}</Project>
+      <Name>Unity.Settings.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

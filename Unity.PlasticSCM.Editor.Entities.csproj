@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E6798E1B-C726-EDC7-5910-7CDFBAB8FDD6}</ProjectGuid>
+    <ProjectGuid>{D625A604-6CDE-8EEE-CCE2-F9E9B438CE6B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.PlasticSCM.Editor.Entities</AssemblyName>
@@ -1199,7 +1199,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{0011C7CE-6196-36FD-8BF5-E5E9D58B6A6F}</Project>
+      <Project>{319B4757-13E1-A4A1-A253-E591A77BC26D}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
   </ItemGroup>

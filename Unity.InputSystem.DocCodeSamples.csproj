@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A4D9868B-02FA-A0B0-9CD6-1B97C69F5A39}</ProjectGuid>
+    <ProjectGuid>{8151F5FE-89DE-2AA1-B932-07CD8AF93BB9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.InputSystem.DocCodeSamples</AssemblyName>
@@ -1152,7 +1152,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.InputSystem.csproj">
-      <Project>{E9279ECD-37F2-F04D-C3A7-35212253C0D8}</Project>
+      <Project>{17398DFC-8927-94F1-D4E0-753C2838F9F4}</Project>
       <Name>Unity.InputSystem</Name>
     </ProjectReference>
   </ItemGroup>

@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{960293E6-598C-F11A-9024-D9FF13FD506B}</ProjectGuid>
+    <ProjectGuid>{B0899575-2BC7-1737-E0EF-B4DC16152A66}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Collections.Editor</AssemblyName>
@@ -1199,7 +1199,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Collections.csproj">
-      <Project>{19159968-39D7-F450-3B6B-D2A744A7A22B}</Project>
+      <Project>{269C5DA1-D935-E060-643F-3050D74320C6}</Project>
       <Name>Unity.Collections</Name>
     </ProjectReference>
   </ItemGroup>
