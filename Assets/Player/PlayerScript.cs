@@ -10,13 +10,17 @@ public class PlayerScript : MonoBehaviour
     public Rigidbody rb;
 
     [SerializeField]
-    public float Speed;
+    public float speed;
+
+    [SerializeField]
+    public Transform _camera;
 
     public InputActionReference move;
 
     void Start()
     {
-        
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -29,8 +33,16 @@ public class PlayerScript : MonoBehaviour
     void MovePlayer()
     {
         Vector2 moveDirection = move.action.ReadValue<Vector2>();
-        Vector3 moveChar = new Vector3(moveDirection.x, 0f, moveDirection.y);
-        rb.linearVelocity = moveChar * Speed * Time.fixedDeltaTime;
+
+        Vector3 horizontalDirection = moveDirection.x * _camera.right;
+        Vector3 verticallDirection = moveDirection.y * _camera.forward;
+
+        verticallDirection.y = 0;
+        horizontalDirection.y = 0;
+
+        Vector3 moveChar = horizontalDirection + verticallDirection;
+
+        rb.linearVelocity = moveChar * speed * Time.fixedDeltaTime;
         //rb.MovePosition (rb.position + new Vector3(moveDirection.x, 0f, moveDirection.y) * Speed * Time.fixedDeltaTime);
     }
 }

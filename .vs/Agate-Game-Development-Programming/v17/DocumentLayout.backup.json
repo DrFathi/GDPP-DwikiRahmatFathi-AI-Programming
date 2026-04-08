@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|c:\\dwiki\\games\\gdpp2\\agate-game-development-programming\\assets\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerScript.cs",
+              "DocumentMoniker": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Player\\PlayerScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Player\\PlayerScript.cs",
+              "ToolTip": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Player\\PlayerScript.cs",
+              "RelativeToolTip": "Assets\\Player\\PlayerScript.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwBYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T15:36:22.151Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
