@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|c:\\dwiki\\games\\gdpp2\\agate-game-development-programming\\assets\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|c:\\dwiki\\games\\gdpp2\\agate-game-development-programming\\assets\\pickable\\pickablescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\pickable\\pickablescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|c:\\dwiki\\games\\gdpp2\\agate-game-development-programming\\assets\\pickable\\pickabletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\pickable\\pickabletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\assets\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,20 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PickableType.cs",
+              "DocumentMoniker": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Pickable\\PickableType.cs",
+              "RelativeDocumentMoniker": "Assets\\Pickable\\PickableType.cs",
+              "ToolTip": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Pickable\\PickableType.cs",
+              "RelativeToolTip": "Assets\\Pickable\\PickableType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T01:56:51.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PickableScript.cs",
+              "DocumentMoniker": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Pickable\\PickableScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Pickable\\PickableScript.cs",
+              "ToolTip": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Pickable\\PickableScript.cs",
+              "RelativeToolTip": "Assets\\Pickable\\PickableScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T01:43:14.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PlayerScript.cs",
               "DocumentMoniker": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Player\\PlayerScript.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\PlayerScript.cs",
               "ToolTip": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Player\\PlayerScript.cs",
               "RelativeToolTip": "Assets\\Player\\PlayerScript.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwBYAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-07T15:36:22.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-07T15:36:22.151Z"
             }
           ]
         }
