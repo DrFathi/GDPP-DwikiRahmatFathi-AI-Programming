@@ -18,6 +18,12 @@ public class EnemyScript : MonoBehaviour
     [HideInInspector]
     public NavMeshAgent NavMashAgent;
 
+    [SerializeField]
+    public float ChaseDistance;
+
+    [SerializeField]
+    public PlayerScript Player;
+
     private void Awake()
     {
         NavMashAgent = GetComponent<NavMeshAgent>();
@@ -31,6 +37,16 @@ public class EnemyScript : MonoBehaviour
         {
             currentState.UpdateState(this);
         }
+    }
+
+    public void SwitchState(BaseState newState)
+    {
+       
+        currentState.ExitState(this);
+        currentState = newState;
+        
+        currentState.EnterState(this);
+
     }
 
 }

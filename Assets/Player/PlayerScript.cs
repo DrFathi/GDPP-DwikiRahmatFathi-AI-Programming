@@ -21,6 +21,8 @@ public class PlayerScript : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame

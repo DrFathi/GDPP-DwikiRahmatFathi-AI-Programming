@@ -11,6 +11,15 @@ public class ChaseState : BaseState
 
     public void UpdateState(EnemyScript enemy)
     {
+        if (enemy.Player != null)
+        {
+            enemy.NavMashAgent.SetDestination(enemy.Player.transform.position);
+
+            if(Vector3.Distance(enemy.transform.position, enemy.Player.transform.position) > enemy.ChaseDistance)
+            {
+                enemy.SwitchState(enemy.patrolState);
+            }
+        }
         Debug.Log("Chasing");
     }
 

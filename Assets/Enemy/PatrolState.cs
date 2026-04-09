@@ -15,6 +15,11 @@ public class PatrolState : BaseState
 
     public void UpdateState(EnemyScript enemy)
     {
+        if(Vector3.Distance(enemy.transform.position, enemy.Player.transform.position) < enemy.ChaseDistance)
+        {
+            enemy.SwitchState(enemy.chaseState);
+        }
+
         if (index < enemy.Waypoints.Count)
         {
             if (!isPatrolling)
@@ -23,6 +28,8 @@ public class PatrolState : BaseState
                 enemy.NavMashAgent.SetDestination(destination);
                 isPatrolling = true;
                 index++;
+
+                Debug.Log("Patrolling to Waypoint " + index);
             }
             else
             {
