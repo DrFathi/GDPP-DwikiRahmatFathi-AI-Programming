@@ -26,9 +26,20 @@ public class EnemyScript : MonoBehaviour
 
     private void Awake()
     {
+        
+
         NavMashAgent = GetComponent<NavMeshAgent>();
         currentState = patrolState;
         currentState.EnterState(this);
+    }
+
+    private void Start()
+    {
+        if (Player != null)
+        {
+            Player.OnPowerUpStart += StartRetreating;
+            Player.OnPowerUpStop += StopRetreating;
+        }
     }
 
     private void Update()
@@ -47,6 +58,16 @@ public class EnemyScript : MonoBehaviour
         
         currentState.EnterState(this);
 
+    }
+
+    private void StartRetreating()
+    {
+        SwitchState(retreatState);
+    }
+
+    private void StopRetreating()
+    {
+        SwitchState(patrolState);
     }
 
 }

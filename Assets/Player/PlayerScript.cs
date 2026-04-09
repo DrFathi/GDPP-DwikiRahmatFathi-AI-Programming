@@ -1,3 +1,6 @@
+using System;
+using System.Collections;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
@@ -9,6 +12,14 @@ public class PlayerScript : MonoBehaviour
 
     public Rigidbody rb;
 
+    private Coroutine _powerUpCoroutine;
+
+    [SerializeField]
+    private float _powerUpDuration;
+
+    public Action OnPowerUpStart;
+    public Action OnPowerUpStop;
+
     [SerializeField]
     public float speed;
 
@@ -19,6 +30,7 @@ public class PlayerScript : MonoBehaviour
 
     void Start()
     {
+      
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
@@ -46,5 +58,36 @@ public class PlayerScript : MonoBehaviour
 
         rb.linearVelocity = moveChar * speed * Time.fixedDeltaTime;
         //rb.MovePosition (rb.position + new Vector3(moveDirection.x, 0f, moveDirection.y) * Speed * Time.fixedDeltaTime);
+    }
+
+    public void PickPowerUp()
+    {
+        if (_powerUpCoroutine != null)
+        {
+            StopCoroutine(_powerUpCoroutine);
+        }
+
+        //Debug.Log("Power up picked up");
+        _powerUpCoroutine = StartCoroutine(StartPowerUp());
+
+        
+    }
+
+    private IEnumerator StartPowerUp()
+    {
+        if (OnPowerUpStart != null)
+        {
+            OnPowerUpStart();
+            Debug.Log("Power up started");
+        }
+
+        yield return new WaitForSeconds(_powerUpDuration);
+
+        if (OnPowerUpStop != null)
+        {
+            OnPowerUpStop();
+            Debug.Log("Power up ended");
+        }
+
     }
 }

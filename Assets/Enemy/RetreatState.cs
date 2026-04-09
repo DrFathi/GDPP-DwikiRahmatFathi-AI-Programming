@@ -11,7 +11,12 @@ public class RetreatState : BaseState
 
     public void UpdateState(EnemyScript enemy)
     {
-        Debug.Log("Retreating");
+        if (enemy.Player != null)
+        {
+            Vector3 directionToPlayer = enemy.transform.position - enemy.Player.transform.position;
+            Vector3 retreatPosition = enemy.transform.position + directionToPlayer.normalized * enemy.ChaseDistance;
+            enemy.NavMashAgent.SetDestination(retreatPosition);
+        }   
     }
 
     public void ExitState(EnemyScript enemy)

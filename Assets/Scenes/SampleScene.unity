@@ -641,7 +641,6 @@ GameObject:
   - component: {fileID: 188068394}
   - component: {fileID: 188068393}
   - component: {fileID: 188068392}
-  - component: {fileID: 188068391}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -649,33 +648,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!54 &188068391
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 188068390}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!136 &188068392
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6888,6 +6860,7 @@ GameObject:
   - component: {fileID: 1441895501}
   - component: {fileID: 1441895500}
   - component: {fileID: 1441895502}
+  - component: {fileID: 1441895503}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -6907,7 +6880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b270a07c2a8dd4fa4538750e1f3d86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  rb: {fileID: 188068391}
+  rb: {fileID: 1441895503}
   speed: 250
   _camera: {fileID: 330585546}
   move: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
@@ -6948,6 +6921,33 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!54 &1441895503
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441895499}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &1450407673
 GameObject:
   m_ObjectHideFlags: 0
@@ -9133,6 +9133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34c9c1ade5be4224e8ffb44b4c322801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PickableManager
+  _player: {fileID: 1441895500}
 --- !u!114 &1755267135
 MonoBehaviour:
   m_ObjectHideFlags: 0

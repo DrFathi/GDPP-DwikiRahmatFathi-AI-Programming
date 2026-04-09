@@ -13,22 +13,21 @@ public class PickableManager : MonoBehaviour
     private int _coinCollected = 0;
     private int _totalCoin = 0;
 
+    [SerializeField]
+    private PlayerScript _player;
+
     void Start()
     {
-        InitPickableList();
+        InitCoinList();
     }
-    private void InitPickableList()
+    private void InitCoinList()
     {
         PickableScript[] pickableObjects = GameObject.FindObjectsOfType<PickableScript>();
         for (int i = 0; i < pickableObjects.Length; i++)
         {
-            if(pickableObjects[i].pickableType == PickableType.Coin)
-            {
                 _coinList.Add(pickableObjects[i]);
                 pickableObjects[i].OnPicked += OnPickablePickedUp;
-            }
-            
-
+   
         }
         _totalCoin = _coinList.Count;
         Debug.Log("Coins: " + _coinCollected +" / " + _totalCoin);
@@ -37,16 +36,25 @@ public class PickableManager : MonoBehaviour
     private void OnPickablePickedUp(PickableScript pickable)
     {
 
-        //Debug.Log("You Picked up : " + _pickableList);
-
-
-        _coinList.Remove(pickable);
-        _coinCollected++;
-        Debug.Log("Coins: " + _coinCollected + " / " + _totalCoin);
-
-        if (_coinList.Count == 0)
+        if(pickable.pickableType == PickableType.Coin)
         {
-            Debug.Log("Win!");
+            _coinList.Remove(pickable);
+            _coinCollected++;
+            Debug.Log("Coins: " + _coinCollected + " / " + _totalCoin);
+
+            if (_coinList.Count == 0)
+            {
+                Debug.Log("Win!");
+            }
         }
+        else if(pickable.pickableType == PickableType.PowerUp)
+        {
+            _player?.PickPowerUp();
+        }
+
+
+
+
+
     }
 }
