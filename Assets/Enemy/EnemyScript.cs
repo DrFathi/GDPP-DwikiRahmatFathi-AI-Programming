@@ -2,6 +2,7 @@ using UnityEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.AI;
 
 public class EnemyScript : MonoBehaviour
 {
@@ -11,15 +12,25 @@ public class EnemyScript : MonoBehaviour
     public ChaseState chaseState = new ChaseState();
     public RetreatState retreatState = new RetreatState();
 
+    [SerializeField]
+    public List<GameObject> Waypoints = new List<GameObject>();
+
+    [HideInInspector]
+    public NavMeshAgent NavMashAgent;
+
     private void Awake()
     {
+        NavMashAgent = GetComponent<NavMeshAgent>();
         currentState = patrolState;
         currentState.EnterState(this);
     }
 
     private void Update()
     {
-        currentState.UpdateState(this);
+        if (currentState != null)
+        {
+            currentState.UpdateState(this);
+        }
     }
 
 }

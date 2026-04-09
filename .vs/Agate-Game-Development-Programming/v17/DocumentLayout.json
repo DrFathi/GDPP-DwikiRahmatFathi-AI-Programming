@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\assets\\enemy\\enemyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|c:\\dwiki\\games\\gdpp2\\agate-game-development-programming\\assets\\enemy\\enemyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\enemy\\enemyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|c:\\dwiki\\games\\gdpp2\\agate-game-development-programming\\assets\\enemy\\retreatstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\enemy\\retreatstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|c:\\dwiki\\games\\gdpp2\\agate-game-development-programming\\assets\\enemy\\chasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\enemy\\chasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\assets\\enemy\\patrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\enemy\\patrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\assets\\enemy\\retreatstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\enemy\\retreatstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\assets\\enemy\\chasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\enemy\\chasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\assets\\enemy\\basestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +50,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RetreatState.cs",
               "DocumentMoniker": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Enemy\\RetreatState.cs",
               "RelativeDocumentMoniker": "Assets\\Enemy\\RetreatState.cs",
@@ -58,12 +58,11 @@
               "RelativeToolTip": "Assets\\Enemy\\RetreatState.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T05:53:23.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-08T05:53:23.916Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ChaseState.cs",
               "DocumentMoniker": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Enemy\\ChaseState.cs",
               "RelativeDocumentMoniker": "Assets\\Enemy\\ChaseState.cs",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "Assets\\Enemy\\ChaseState.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T05:52:20.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-08T05:52:20.286Z"
             },
             {
               "$type": "Document",
@@ -88,15 +86,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "PatrolState.cs",
               "DocumentMoniker": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Enemy\\PatrolState.cs",
               "RelativeDocumentMoniker": "Assets\\Enemy\\PatrolState.cs",
               "ToolTip": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Enemy\\PatrolState.cs",
               "RelativeToolTip": "Assets\\Enemy\\PatrolState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T05:48:49.713Z"
+              "WhenOpened": "2026-04-08T05:48:49.713Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -106,7 +105,7 @@
               "RelativeDocumentMoniker": "Assets\\Enemy\\EnemyScript.cs",
               "ToolTip": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Enemy\\EnemyScript.cs",
               "RelativeToolTip": "Assets\\Enemy\\EnemyScript.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T05:46:35.557Z",
               "EditorCaption": ""
