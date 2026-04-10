@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
+using UnityEngine.SceneManagement;
 using UnityEngine.Windows;
 
 public class PlayerScript : MonoBehaviour
@@ -133,7 +134,7 @@ public class PlayerScript : MonoBehaviour
         else
         {
             _health = 0;
-            Debug.Log("YOU LOSE!");
+            SceneManager.LoadScene("GameOverScreen");
         }
         UpdateUI();
     }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro.EditorUtilities;
 using UnityEngine;
 using UnityEngine.InputSystem.Controls;
+using UnityEngine.SceneManagement;
 
 
 public class PickableManager : MonoBehaviour
@@ -62,6 +63,7 @@ public class PickableManager : MonoBehaviour
 
             if (_pickableList.Count == 0)
             {
+                SceneManager.LoadScene("WinScreen");
                 Debug.Log("Win!");
             }
         }
