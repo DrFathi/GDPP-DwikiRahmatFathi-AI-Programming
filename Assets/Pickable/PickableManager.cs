@@ -8,11 +8,13 @@ using UnityEngine.InputSystem.Controls;
 
 public class PickableManager : MonoBehaviour
 {
-    private List<PickableScript> _coinList = new List<PickableScript>();
+    private List<PickableScript> _pickableList = new List<PickableScript>();
 
     private int _coinCollected = 0;
     private int _totalCoin = 0;
-
+    
+    [SerializeField]
+    public ScoreManager _scoreManager;
     [SerializeField]
     private PlayerScript _player;
 
@@ -25,11 +27,22 @@ public class PickableManager : MonoBehaviour
         PickableScript[] pickableObjects = GameObject.FindObjectsOfType<PickableScript>();
         for (int i = 0; i < pickableObjects.Length; i++)
         {
-                _coinList.Add(pickableObjects[i]);
+            if(pickableObjects[i].pickableType == PickableType.Coin)
+                {
+                    _pickableList.Add(pickableObjects[i]);
+                    _totalCoin = _pickableList.Count;
+                    pickableObjects[i].OnPicked += OnPickablePickedUp;
+                }
+
+            else
+            {
                 pickableObjects[i].OnPicked += OnPickablePickedUp;
+            }
+                
    
         }
-        _totalCoin = _coinList.Count;
+        _scoreManager.SetMaxScore(_totalCoin);
+        
         Debug.Log("Coins: " + _coinCollected +" / " + _totalCoin);
     }
 
@@ -38,11 +51,16 @@ public class PickableManager : MonoBehaviour
 
         if(pickable.pickableType == PickableType.Coin)
         {
-            _coinList.Remove(pickable);
+            _pickableList.Remove(pickable);
             _coinCollected++;
             Debug.Log("Coins: " + _coinCollected + " / " + _totalCoin);
 
-            if (_coinList.Count == 0)
+            if(_scoreManager != null)
+            {
+                _scoreManager.AddScore(1);
+            }
+
+            if (_pickableList.Count == 0)
             {
                 Debug.Log("Win!");
             }

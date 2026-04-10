@@ -72,4 +72,21 @@ public class EnemyScript : MonoBehaviour
         SwitchState(patrolState);
     }
 
+    public void Dead()
+    {
+        Debug.Log("You Killed an Enemy!");
+        Destroy(gameObject);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(currentState != retreatState)
+        {
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                collision.gameObject.GetComponent<PlayerScript>().Dead();
+            }
+        }
+    }
+
 }

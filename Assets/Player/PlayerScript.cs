@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Runtime.CompilerServices;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
@@ -25,12 +26,20 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField]
     public Transform _camera;
+    [SerializeField]
+    public Transform _respawnPoint;
+    [SerializeField]
+    private int _health;
 
     public InputActionReference move;
+    public bool _isPowerUpActive;
+
+    [SerializeField]
+    private TMP_Text _healthText;
 
     void Start()
     {
-      
+        UpdateUI();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
@@ -75,19 +84,57 @@ public class PlayerScript : MonoBehaviour
 
     private IEnumerator StartPowerUp()
     {
+        _isPowerUpActive = true;
+
         if (OnPowerUpStart != null)
         {
+            speed += 50;
             OnPowerUpStart();
             Debug.Log("Power up started");
         }
 
         yield return new WaitForSeconds(_powerUpDuration);
+        _isPowerUpActive = false;
 
         if (OnPowerUpStop != null)
         {
+            speed -= 50;
             OnPowerUpStop();
             Debug.Log("Power up ended");
         }
 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (_isPowerUpActive)
+        {
+            if (collision.gameObject.CompareTag("Enemy"))
+            {
+                collision.gameObject.GetComponent<EnemyScript>().Dead();
+            }
+        }
+    }
+
+    private void UpdateUI()
+    {
+        _healthText.text = "Hp  :" + _health;
+    }
+
+    public void Dead()
+    {
+        _health -= 1;
+
+        if(_health > 0)
+        {
+            Debug.Log("Killed by an Enemy");
+            transform.position = _respawnPoint.position;
+        }
+        else
+        {
+            _health = 0;
+            Debug.Log("YOU LOSE!");
+        }
+        UpdateUI();
     }
 }
