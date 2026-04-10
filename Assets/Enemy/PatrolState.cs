@@ -9,6 +9,7 @@ public class PatrolState : BaseState
     private int index;
     public void EnterState(EnemyScript enemy)
     {
+        enemy.Animator.SetTrigger("PatrolState");
         isPatrolling = false;
         index = 0;
     }

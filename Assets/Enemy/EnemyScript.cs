@@ -24,9 +24,11 @@ public class EnemyScript : MonoBehaviour
     [SerializeField]
     public PlayerScript Player;
 
+    public Animator Animator;
+
     private void Awake()
     {
-        
+        Animator = GetComponent<Animator>();
 
         NavMashAgent = GetComponent<NavMeshAgent>();
         currentState = patrolState;

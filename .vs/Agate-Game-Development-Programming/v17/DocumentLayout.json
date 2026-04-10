@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|c:\\dwiki\\games\\gdpp2\\agate-game-development-programming\\assets\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\assets\\pickable\\pickabletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\pickable\\pickabletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\assets\\enemy\\patrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\enemy\\patrolstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,20 +23,12 @@
       "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\enemy\\retreatstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|c:\\dwiki\\games\\gdpp2\\agate-game-development-programming\\assets\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\player\\playerscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\assets\\pickable\\pickablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\pickable\\pickablemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\assets\\pickable\\pickablescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\pickable\\pickablescript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\assets\\pickable\\pickabletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|solutionrelative:assets\\pickable\\pickabletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C34B718-EFE4-1228-EAD7-3B284FBBE132}|Assembly-CSharp.csproj|C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\assets\\enemy\\chasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "RetreatState.cs",
               "DocumentMoniker": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Enemy\\RetreatState.cs",
               "RelativeDocumentMoniker": "Assets\\Enemy\\RetreatState.cs",
@@ -58,8 +58,7 @@
               "RelativeToolTip": "Assets\\Enemy\\RetreatState.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T05:53:23.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-08T05:53:23.916Z"
             },
             {
               "$type": "Document",
@@ -87,20 +86,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PatrolState.cs",
               "DocumentMoniker": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Enemy\\PatrolState.cs",
               "RelativeDocumentMoniker": "Assets\\Enemy\\PatrolState.cs",
               "ToolTip": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Enemy\\PatrolState.cs",
               "RelativeToolTip": "Assets\\Enemy\\PatrolState.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB0AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T05:48:49.713Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-08T05:48:49.713Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "EnemyScript.cs",
               "DocumentMoniker": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Enemy\\EnemyScript.cs",
               "RelativeDocumentMoniker": "Assets\\Enemy\\EnemyScript.cs",
@@ -108,12 +106,11 @@
               "RelativeToolTip": "Assets\\Enemy\\EnemyScript.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAmwCgAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T05:46:35.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-08T05:46:35.557Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PickableManager.cs",
               "DocumentMoniker": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Pickable\\PickableManager.cs",
               "RelativeDocumentMoniker": "Assets\\Pickable\\PickableManager.cs",
@@ -121,12 +118,11 @@
               "RelativeToolTip": "Assets\\Pickable\\PickableManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T02:05:58.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-08T02:05:58.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PickableScript.cs",
               "DocumentMoniker": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Pickable\\PickableScript.cs",
               "RelativeDocumentMoniker": "Assets\\Pickable\\PickableScript.cs",
@@ -134,31 +130,29 @@
               "RelativeToolTip": "Assets\\Pickable\\PickableScript.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T01:43:14.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-08T01:43:14.664Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "PickableType.cs",
               "DocumentMoniker": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Pickable\\PickableType.cs",
               "RelativeDocumentMoniker": "Assets\\Pickable\\PickableType.cs",
               "ToolTip": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Pickable\\PickableType.cs",
               "RelativeToolTip": "Assets\\Pickable\\PickableType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T01:56:51.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-08T01:56:51.421Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "PlayerScript.cs",
               "DocumentMoniker": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Player\\PlayerScript.cs",
               "RelativeDocumentMoniker": "Assets\\Player\\PlayerScript.cs",
               "ToolTip": "C:\\Dwiki\\Games\\GDPP2\\Agate-Game-Development-Programming\\Assets\\Player\\PlayerScript.cs",
               "RelativeToolTip": "Assets\\Player\\PlayerScript.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAgwCAAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwBYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-07T15:36:22.151Z",
               "EditorCaption": ""
